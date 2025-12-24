@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Gemini Prompt Navigator",
+  "version": "1.0",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://gemini.google.com/*"],
+      "js": ["dist/content.js"],
+      "css": ["src/styles.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "src/popup.html"
+  }
+}
